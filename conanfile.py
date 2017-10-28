@@ -7,7 +7,6 @@ class FizzbuzzConan(ConanFile):
     license = "<Put the package license here>"
     url = "<Package recipe repository url here, for issues about the package>"
     description = "<Description of Fizzbuzz here>"
-    build_requires = "catch/1.5.0@TyRoXx/stable"
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
     default_options = "shared=False"
@@ -32,4 +31,4 @@ class FizzbuzzConan(ConanFile):
         self.copy("*.a", dst="lib", keep_path=False)
 
     def package_info(self):
-        self.cpp_info.libs = ["hello"]
+        self.cpp_info.libs = ["fizzbuzz"]
