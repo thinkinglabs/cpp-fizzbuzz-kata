@@ -1,1 +1,1 @@
-conan build . && bin/fizzbuzz
+conan create thinkinglabs/dev
